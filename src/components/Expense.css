@@ -1,0 +1,47 @@
+.expenses-container{
+  background-color: rgb(14, 12, 12);
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+ margin-top: -1rem;
+}
+
+.expenses-container h1{
+  color: brown;
+  font-size: 2rem;
+  padding: 2rem;
+}
+
+.expenses-list{
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; 
+  margin-top: 1rem;
+}
+
+.expense-item{
+    display: flex; /* Create a nested flex container */
+    justify-content: space-between; /* Space out name and price */
+    width: 250px; /* Adjust the width as needed */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 50%;
+    background-color: rgba(245, 245, 245, 0.365);
+
+}
+
+.expense-name{
+    font-weight: bold;
+    color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.expense-amount{
+    color:  black;
+    font-weight: bold;
+    background-color: rgb(139, 234, 164);
+    padding: 1rem;
+}
