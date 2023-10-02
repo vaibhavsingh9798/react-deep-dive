@@ -1,10 +1,14 @@
 import './Expense.css'
-function Expense(props){ 
+import Card from '../UI/Card';
+const Expense = (props) => { 
   const months = ["January","February","March","April","May","June","July", "August",  "September", "October",  "November", "December" ];
    return(
     <>
+   
        <div className="expenses-container">
+       <Card>
       <h1>Expense List</h1>
+      </Card>
       <ul className="expenses-list">
         {props.items.map((expense, index) => (
           <li key={index} className="expense-item">
@@ -15,6 +19,7 @@ function Expense(props){
         ))}
       </ul>
     </div>
+   
   </>
    )
 }
