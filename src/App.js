@@ -1,14 +1,15 @@
+import { useState } from "react";
+import AddExpense from "./components/Expense/AddExpense";
+import "./components/Expense/Expense.css"
 
-import './App.css';
-import Expense from './components/Expenses/Expense';
- 
-function App() {
-  let items = [{name:"Food",price:200,date: new Date().getMonth()},{name:"Movie",price:300,date:new Date().getMonth()},{name:"Petrol",price:400,date: new Date().getMonth()}]
+
+export default function App() {
+  const [show,setShow] = useState(false)
   return (
-   <>
-   <Expense items={items}/>
-   </>
+    <div className="expenses-container">
+      <h1>Expenses</h1>
+    { !show && <button onClick={() => setShow(true)}>Add Expense</button> }
+      <AddExpense show={show}/>
+    </div>
   );
 }
-
-export default App;

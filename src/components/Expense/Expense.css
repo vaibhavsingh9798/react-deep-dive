@@ -1,9 +1,9 @@
 .expenses-container{
-  background-color: rgb(14, 12, 12);
+  background-color: rgb(98, 185, 12);
   height: 100vh;
   width: 100%;
   text-align: center;
- margin-top: -1rem;
+  margin-top: -1rem;
 }
 
 .expenses-container h1{
@@ -51,4 +51,14 @@
     font-weight: bold;
     background-color: rgb(139, 234, 164);
     padding: 1rem;
+}
+
+.form-container{
+  background-color: rgb(14, 12, 12);
+  text-align: center;
+  margin-top: -1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  color: #ccc;
+  font-weight: bold;
 }
