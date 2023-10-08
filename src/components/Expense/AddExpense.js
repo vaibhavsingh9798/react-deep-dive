@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ShowExpense from "./ShowExpense";
+import ExpenseChart from "./ExppenseChart";
 
 
 const AddExpense = (props) => {
@@ -69,6 +70,7 @@ const AddExpense = (props) => {
           </select>
         </div>
         {items.length == 0 && <h3>Expense not found!</h3>}
+        <ExpenseChart expenses={filterItems} />
         {items.length > 0 && <ShowExpense items={filterItems} />}
       </div>
     </>

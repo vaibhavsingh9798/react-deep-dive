@@ -1,0 +1,32 @@
+/* Container for the chart bar */
+.chart-bar {
+    width: 6rem; /* Adjust the width as needed */
+    display: inline-block;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .chart-bar__inner {
+    position: relative;
+    background-color: #a48e8e; 
+    height: 13rem; 
+    border-radius: 0.5rem rgb(41, 56, 41); 
+  }
+  
+
+  .chart-bar__fill {
+    background-color: #007bff; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: height 0.3s ease; 
+  }
+  
+  .chart-bar__label {
+    margin-top: 5px;
+    font-size: 14px;
+  }
+  
+
+  

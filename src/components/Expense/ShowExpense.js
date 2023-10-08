@@ -8,6 +8,7 @@ const ShowExpense = (props) => {
             Title: {item.title} Price: {item.price} Date:{item.date}
           </h3>
         ))}
+        
       </div>
     </>
   );
